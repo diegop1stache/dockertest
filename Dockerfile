@@ -7,7 +7,7 @@ RUN dotnet restore
 
 # Node
 COPY package.json package.json
-RUN npm install
+RUN npm install -g
 
 # Copy everything else and build
 COPY . .
